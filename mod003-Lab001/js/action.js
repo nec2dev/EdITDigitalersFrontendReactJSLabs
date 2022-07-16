@@ -22,6 +22,11 @@ if (rol == "admin" || rol == "recursos") {
 un contenedor con innerHTML(), por ejemplo 
 en un h1. */
 
+  let empleado = [];
+   empleado.push = prompt("Ingrese el nombre:");
+   empleado.push = prompt("Ingrese el apelido:");
+   empleado.push = prompt("Ingrese la edad:");
+
   /* 5. Validar usuario y contrasenia.
 En todos los casos donde el usuario o contraseña 
 son incorrectos, se redirigirá al usuario a una 
@@ -30,7 +35,26 @@ página como la siguiente. */
   let claveNueva = prompt("Ingrese su clave:");
   if (nombreNuevo == nombre && claveNueva == "1234") {
     alert("Bienvenido " + nombreNuevo);
+    for(let i = 0; i < empleado.length; i++){
+      alert(empleado[i]);
+    }
   }else{
     alert("Usuario o contraseña incorrectos");
   }
 }
+/* A partir del Laboratorio adicional 2 del módulo 
+anterior, realizar los siguientes pasos: */
+/* 1. Generar un arreglo de empleados donde 
+indicaremos su nombre, apellido y edad. */
+/* 2. Mostrar los datos en una tabla iterando el 
+arreglo. La tabla se mostrará así: */
+/* 3. Antes de mostrar la tabla, comprobar usuario 
+y contraseña de quien quiera acceder a ella o 
+se lo redireccionará a una página diferente. */
+// Primera etapa
+
+// Segunda etapa
+/* Si los datos son válidos, aparte de imprimir el 
+nombre de usuario en pantalla se redireccionará 
+a la siguiente página, el resultado final será: */
+
