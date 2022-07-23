@@ -3,9 +3,7 @@
 sóla función. Cada botón pasará a un color
 distinto. La referencia es la de arriba a la
 derecha: */
-/* function alertColor(color){
-    alert('El color es: ' + color);
-} */
+
 /* 2. Al hacer clic en cada botón, haremos la alerta
 que vemos a la derecha. */
 let boton = document.getElementsByTagName("button");
@@ -21,7 +19,13 @@ como en el ejemplo de referencia. */
 /* 4. Con style modificaremos el color de fondo de
 la caja. */
 
-function alertColor(color) {
+/* function alertColor(color) {
+  alert("El color es " + color);
+  document.getElementById("caja").innerHTML = "El color es " + color;
+  document.getElementById("caja").style.background = color;
+} */
+
+const alertColor = (color) => {
   alert("El color es " + color);
   document.getElementById("caja").innerHTML = "El color es " + color;
   document.getElementById("caja").style.background = color;
